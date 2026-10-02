@@ -23,7 +23,9 @@ setContent {
         Scaffold(
             modifier = Modifier.fillMaxSize()
         ) { innerPadding ->
-            // Panggil composable yang ingin ditampilkan dari Scaffold
+            TataLetakBoxColumnRow(
+                modifier = Modifier.padding(paddingValues = innerPadding)
+            )
         }
     }
 }
