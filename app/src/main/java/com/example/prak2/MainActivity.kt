@@ -17,3 +17,13 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
     }
 }
+
+setContent {
+    MyLayoutTheme {
+        Scaffold(
+            modifier = Modifier.fillMaxSize()
+        ) { innerPadding ->
+            // Panggil composable yang ingin ditampilkan dari Scaffold
+        }
+    }
+}
