@@ -1,3 +1,4 @@
+
 package com.example.prak2
 
 import androidx.compose.foundation.Image
@@ -6,6 +7,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -22,7 +24,7 @@ fun Tugas() {
     Box(
         modifier = Modifier.fillMaxSize()
     ) {
-        // Gambar latar belakang
+        // Latar belakang halaman login
         Image(
             painter = painterResource(
                 id = R.drawable.background_login
@@ -32,10 +34,11 @@ fun Tugas() {
             contentScale = ContentScale.Crop
         )
 
-        // Judul dan keterangan login
+        // Komponen halaman login
         Column(
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
+            // Judul
             Text(
                 text = "Login",
                 color = Color.Blue,
@@ -43,14 +46,25 @@ fun Tugas() {
                 fontWeight = FontWeight.Bold
             )
 
-            Spacer(
-                modifier = Modifier.height(4.dp)
-            )
+            Spacer(modifier = Modifier.height(4.dp))
 
+            // Keterangan
             Text(
                 text = "Ini adalah halaman login.",
                 color = Color.White,
                 fontSize = 12.sp
+            )
+
+            Spacer(modifier = Modifier.height(16.dp))
+
+            // Logo UMY
+            Image(
+                painter = painterResource(
+                    id = R.drawable.logo_umy
+                ),
+                contentDescription = "Logo UMY",
+                modifier = Modifier.size(100.dp),
+                contentScale = ContentScale.Fit
             )
         }
     }
