@@ -24,7 +24,7 @@ fun Tugas() {
     Box(
         modifier = Modifier.fillMaxSize()
     ) {
-        // Latar belakang halaman login
+        // Gambar latar belakang
         Image(
             painter = painterResource(
                 id = R.drawable.background_login
@@ -34,7 +34,7 @@ fun Tugas() {
             contentScale = ContentScale.Crop
         )
 
-        // Komponen halaman login
+        // Susunan komponen halaman login
         Column(
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
@@ -72,6 +72,16 @@ fun Tugas() {
             // Nama mahasiswa
             Text(
                 text = "Nama: Ayuningtyas",
+                color = Color.White,
+                fontSize = 14.sp,
+                fontWeight = FontWeight.Medium
+            )
+
+            Spacer(modifier = Modifier.height(4.dp))
+
+            // NIM mahasiswa
+            Text(
+                text = "NIM: 20240140255",
                 color = Color.White,
                 fontSize = 14.sp,
                 fontWeight = FontWeight.Medium
