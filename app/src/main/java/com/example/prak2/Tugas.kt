@@ -38,7 +38,7 @@ fun Tugas() {
         Column(
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            // Judul
+            // Judul Login
             Text(
                 text = "Login",
                 color = Color.Blue,
@@ -48,7 +48,7 @@ fun Tugas() {
 
             Spacer(modifier = Modifier.height(4.dp))
 
-            // Keterangan
+            // Keterangan Login
             Text(
                 text = "Ini adalah halaman login.",
                 color = Color.White,
@@ -65,6 +65,16 @@ fun Tugas() {
                 contentDescription = "Logo UMY",
                 modifier = Modifier.size(100.dp),
                 contentScale = ContentScale.Fit
+            )
+
+            Spacer(modifier = Modifier.height(12.dp))
+
+            // Nama mahasiswa
+            Text(
+                text = "Nama: Ayuningtyas",
+                color = Color.White,
+                fontSize = 14.sp,
+                fontWeight = FontWeight.Medium
             )
         }
     }
