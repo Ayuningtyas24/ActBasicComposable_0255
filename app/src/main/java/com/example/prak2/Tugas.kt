@@ -24,7 +24,7 @@ fun Tugas() {
     Box(
         modifier = Modifier.fillMaxSize()
     ) {
-        // Gambar latar belakang
+        // Latar belakang halaman login
         Image(
             painter = painterResource(
                 id = R.drawable.background_login
@@ -81,10 +81,22 @@ fun Tugas() {
 
             // NIM mahasiswa
             Text(
-                text = "NIM: 20240140255",
+                text = "NIM: ISI_NIM_KAMU",
                 color = Color.White,
                 fontSize = 14.sp,
                 fontWeight = FontWeight.Medium
+            )
+
+            Spacer(modifier = Modifier.height(16.dp))
+
+            // Gambar Ka'bah
+            Image(
+                painter = painterResource(
+                    id = R.drawable.kartun_lucu
+                ),
+                contentDescription = "Gambar Ka'bah",
+                modifier = Modifier.size(140.dp),
+                contentScale = ContentScale.Crop
             )
         }
     }
