@@ -2,10 +2,12 @@
 package com.example.prak2
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
@@ -38,7 +40,9 @@ fun Tugas() {
 
         // Komposisi halaman login
         Column(
-            horizontalAlignment = Alignment.CenterHorizontally
+            modifier = Modifier.fillMaxWidth(),
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.spacedBy(8.dp)
         ) {
             // Judul Login
             Text(
@@ -48,16 +52,12 @@ fun Tugas() {
                 fontWeight = FontWeight.Bold
             )
 
-            Spacer(modifier = Modifier.height(4.dp))
-
             // Keterangan Login
             Text(
                 text = "Ini adalah halaman login.",
                 color = Color.White,
                 fontSize = 12.sp
             )
-
-            Spacer(modifier = Modifier.height(16.dp))
 
             // Logo UMY
             Image(
@@ -69,8 +69,6 @@ fun Tugas() {
                 contentScale = ContentScale.Fit
             )
 
-            Spacer(modifier = Modifier.height(12.dp))
-
             // Nama mahasiswa
             Text(
                 text = "Nama: Ayuningtyas",
@@ -78,8 +76,6 @@ fun Tugas() {
                 fontSize = 14.sp,
                 fontWeight = FontWeight.Medium
             )
-
-            Spacer(modifier = Modifier.height(4.dp))
 
             // NIM mahasiswa
             Text(
@@ -89,9 +85,7 @@ fun Tugas() {
                 fontWeight = FontWeight.Medium
             )
 
-            Spacer(modifier = Modifier.height(16.dp))
-
-            // Gambar Kartun berbentuk lingkaran
+            // Gambar kartun berbentuk lingkaran
             Image(
                 painter = painterResource(
                     id = R.drawable.kartun_lucu
